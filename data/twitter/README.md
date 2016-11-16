@@ -19,14 +19,7 @@ The complete steps for getting the data are described there.  To get started:
 
 3 - Get the actual text data for the provided list of Tweet ids and language labels
 ```
-cat uniformly_sampled.tsv | cut -f2 | xargs -n100 fetch.sh > data/uniformly_sampled.tsv
-
-cat >/tmp/fetch.sh <<'EOF'
-#!/bin/bash
-sleep 5
-twurl "/1.1/statuses/lookup.json?id=$(echo $@ | tr ' ' ,)&trim_user=true" | jq -c ".[]|[.id_str, .text]"
-EOF
-
-cat uniformly_sampled.tsv | cut -f2 | xargs -n100 /tmp/fetch.sh > uniformly_sampled.json
+sh init.sh uniformly_sampled.tsv
 ```
-You should now have a file `uniformly_sampled.json`.
+You should now have a file `uniformly_sampled.tsv.json`.
+
