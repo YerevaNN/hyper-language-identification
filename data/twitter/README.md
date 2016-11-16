@@ -2,7 +2,7 @@ These data are from Twitter's [Evaluating language identification performance](h
 
 #### Getting started
 
-The complete steps for getting the data are described at [Mitja Trampus](https://github.com/mitjat)'s [language identification evaluation](https://github.com/mitjat/langid_eval/).
+The complete steps for getting the data are described at [Mitja Trampus](https://github.com/mitjat)'s [language identification evaluation](https://github.com/mitjat/langid_eval/) repo README.
 
 1 - Install twurl and jq
 
