@@ -1,8 +1,8 @@
-These data are from [Mitja Trampus](https://github.com/mitjat)'s [language identification evaluation](https://github.com/mitjat/langid_eval/)
+These data are from Twitter's [Evaluating language identification performance](https://blog.twitter.com/2015/evaluating-language-identification-performance).
 
-For the full write-up, see [Evaluating language identification performance | Twitter Blogs](https://blog.twitter.com/2015/evaluating-language-identification-performance).
+#### Getting started
 
-The complete steps for getting the data are described there.  To get started:
+The complete steps for getting the data are described at [Mitja Trampus](https://github.com/mitjat)'s [language identification evaluation](https://github.com/mitjat/langid_eval/).
 
 1 - Install twurl and jq
 
@@ -21,5 +21,6 @@ The complete steps for getting the data are described there.  To get started:
 ```
 sh init.sh uniformly_sampled.tsv
 ```
+
 You should now have a file `uniformly_sampled.tsv.json`.
 
