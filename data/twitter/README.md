@@ -4,21 +4,20 @@ For the full write-up, see [Evaluating language identification performance | Twi
 
 The complete steps for getting the data are described there.  To get started:
 
-1. Install twurl and jq
+1 - Install twurl and jq
 
 ```
     sudo gem install twurl
     pip install jq
 ```
 
-2. Get [Twitter OAuth credentials](https://apps.twitter.com/app/new) and 
+2 - Get [Twitter OAuth credentials](https://apps.twitter.com/app/new) and 
 ```
 % twurl authorize --consumer-key key       \
                     --consumer-secret secret
 ```
 
-3. Get the actual text data for the provided list of Tweet ids and language labels
-
+3 - Get the actual text data for the provided list of Tweet ids and language labels
 ```
 cat uniformly_sampled.tsv | cut -f2 | xargs -n100 fetch.sh > data/uniformly_sampled.tsv
 
@@ -30,4 +29,4 @@ EOF
 
 cat uniformly_sampled.tsv | cut -f2 | xargs -n100 /tmp/fetch.sh > uniformly_sampled.json
 ```
-
+You should now have a file `uniformly_sampled.json`.
